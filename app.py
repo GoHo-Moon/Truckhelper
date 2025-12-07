@@ -32,7 +32,7 @@ def load_html_from_zip(zip_filename, html_filename):
 with tab1:
     st.subheader("남양주시 주차장 입지 분석")
     # zip 파일 이름과 그 안의 html 파일 이름을 정확히 적어주세요
-    html_data = load_html_from_zip("namyangju_map.zip", "namyangju_map.html")
+    html_data = load_html_from_zip("namyangju_map.html.zip", "namyangju_map.html")
     
     if html_data:
         components.html(html_data, height=700, scrolling=True)
@@ -43,7 +43,7 @@ with tab1:
 with tab2:
     st.subheader("화성시 주차장 입지 분석")
     # zip 파일 이름과 그 안의 html 파일 이름을 정확히 적어주세요
-    html_data = load_html_from_zip("hwaseong_map.zip", "hwaseong_map.html")
+    html_data = load_html_from_zip("hwaseong_map.html.zip", "hwaseong_map.html")
     
     if html_data:
         components.html(html_data, height=700, scrolling=True)
